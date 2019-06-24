@@ -3,9 +3,12 @@ install.packages("keras")
 install_keras(tensorflow = "1.12")
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Sangeet Subedi
 #Change Practice
 
+=======
+>>>>>>> 86c623324554c77b70ce4bb2b3b2b4941cdae18e
 =======
 >>>>>>> 86c623324554c77b70ce4bb2b3b2b4941cdae18e
 
@@ -16,7 +19,11 @@ mnist <- dataset_mnist()
 x_train <- mnist$train$x
 y_train <- mnist$train$y
 <<<<<<< HEAD
+<<<<<<< HEAD
 ay_train<- mnist$train$y
+=======
+
+>>>>>>> 86c623324554c77b70ce4bb2b3b2b4941cdae18e
 =======
 
 >>>>>>> 86c623324554c77b70ce4bb2b3b2b4941cdae18e
@@ -73,8 +80,13 @@ model %>%evaluate(x_test, y_test, verbose = 0)
 #generate predictions on new data
 my_prediction_result <- model%>%predict_classes(x_test)
 <<<<<<< HEAD
+<<<<<<< HEAD
 write.csv(my_prediction_result, file = "prediction_result.csv")
 write.csv(mnist$train$y, file = "real_data.csv")
+=======
+
+
+>>>>>>> 86c623324554c77b70ce4bb2b3b2b4941cdae18e
 =======
 
 
