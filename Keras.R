@@ -1,16 +1,8 @@
-
 install.packages("keras")
 install_keras(tensorflow = "1.12")
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Sangeet Subedi
 #Change Practice
-
-=======
->>>>>>> 86c623324554c77b70ce4bb2b3b2b4941cdae18e
-=======
->>>>>>> 86c623324554c77b70ce4bb2b3b2b4941cdae18e
 
 library(keras)
 mnist <- dataset_mnist()
@@ -18,15 +10,9 @@ mnist <- dataset_mnist()
 #preparing the data
 x_train <- mnist$train$x
 y_train <- mnist$train$y
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 ay_train<- mnist$train$y
-=======
 
->>>>>>> 86c623324554c77b70ce4bb2b3b2b4941cdae18e
-=======
-
->>>>>>> 86c623324554c77b70ce4bb2b3b2b4941cdae18e
 x_test <- mnist$test$x
 y_test <- mnist$test$y
 
@@ -63,7 +49,6 @@ model %>% compile(
   metrics = c("accuracy")
 )
 
-
 #training and evaluation
 history <- model %>% fit(
   x_train, y_train, 
@@ -71,6 +56,8 @@ history <- model %>% fit(
   validation_split = 0.2
 )
 
+finalmodel <- model
+model1 <- create_model()
 
 plot(history)
 
@@ -79,20 +66,8 @@ model %>%evaluate(x_test, y_test, verbose = 0)
 
 #generate predictions on new data
 my_prediction_result <- model%>%predict_classes(x_test)
-<<<<<<< HEAD
-<<<<<<< HEAD
+
+
 write.csv(my_prediction_result, file = "prediction_result.csv")
 write.csv(mnist$train$y, file = "real_data.csv")
-=======
-
-
->>>>>>> 86c623324554c77b70ce4bb2b3b2b4941cdae18e
-=======
-
-
->>>>>>> 86c623324554c77b70ce4bb2b3b2b4941cdae18e
-
-
-
-
 
